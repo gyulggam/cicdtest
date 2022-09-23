@@ -1,0 +1,62 @@
+.title {
+  font-family: SUIT-Bold;
+  font-size: 2.75rem;
+  font-weight: bold;
+  line-height: 1.33;
+  letter-spacing: -0.48px;
+  color: #000;
+}
+
+.disc {
+  font-family: SUIT-Medium;
+  font-size: 1.375rem;
+  line-height: 1.33;
+  letter-spacing: -0.3px;
+  color: #443e49
+}
+
+.custum-prev-btn {
+  cursor: pointer;
+  position: absolute;
+  width: 4%;
+  height: auto;
+  top: 125px;
+  left: -10%;
+}
+
+.custum-next-btn {
+  cursor: pointer;
+  position: absolute;
+  width: 4%;
+  height: auto;
+  top: 125px;
+  right: -5%;
+}
+
+@media (max-width: 640px) {
+ 
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .disc {
+    font-size: 1rem;
+  }
+
+  .custum-prev-btn {
+    width: 20px;
+    height: 20px;
+    top: 140px;
+    left: -10px;
+  }
+  
+  .custum-next-btn {
+    width: 20px;
+    height: 20px;
+    top: 140px;
+    right: -10px;
+  }
+}

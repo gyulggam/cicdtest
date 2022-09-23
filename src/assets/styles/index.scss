@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: SUIT-Medium;
+  src: url('../fonts/SUIT-Medium.ttf');
+}
+
+@font-face {
+  font-family: SUIT-Bold;
+  src: url('../fonts/SUIT-Bold.ttf');
+}
+
+@font-face {
+  font-family: SUIT-Light;
+  src: url('../fonts/SUIT-Light.ttf');
+}
+
+html {
+  font-size: 1rem;
+  font-family: SUIT-Medium;
+}
+
+img {
+  display: initial;
+}
+
+.main-img-wrap {
+  img {
+    width: 22.5rem;
+  }
+}
+
+.img-disc {
+  position: relative;
+  top: 30px;
+  // width: 600px;
+  height: 60px;
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 18px 40px;
+  border-radius: 6px;
+  background-color: #000;
+  color: white;
+}
+
+@media (max-width: 640px) {
+ 
+}
+
+@media (max-width: 768px) {
+  .main-img-wrap {
+    width: 100%;
+    margin-top: 40px;
+
+    img {
+      width: 18rem;
+    }
+  }
+
+  .img-disc {
+    width: 100%;
+    height: auto;
+    font-size: 0.875rem;
+    padding: 11px 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1535px) {
+  html {
+    font-size: 1rem;
+  }
+}
