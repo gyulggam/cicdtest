@@ -29,7 +29,7 @@ function Footer() {
                   <a href="https://www.instagram.com/knewnew.official/?__coig_restricted=1" target="_blank">인스타그램</a>
                 </p>
                 <p>
-                  <a href={"https://blog.naver.com/knewnew"} target={"_blank"}>네이버블로그</a>
+                  <a href={"https://blog.naver.com/knewnew"} target="_blank">네이버블로그</a>
                 </p>
               </div>
             </div>

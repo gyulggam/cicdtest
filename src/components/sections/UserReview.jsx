@@ -64,7 +64,7 @@ const Gallery = () => {
   )
 }
 
-function UserExperience() {
+function UserReview() {
   return (
     <div className='bg-gradient-to-b lg:bg-gradient-to-r from-[#ff3e48] to-[#ff4b84]'>
       <div className='container py-24 lg:py-32'>
@@ -89,4 +89,4 @@ function UserExperience() {
   );
 }
 
-export default UserExperience;
+export default UserReview;
