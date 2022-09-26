@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect, useRef } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import ImgDisc from 'components/elements/ImgDisc'
 import { SwitchTransition, CSSTransition } from 'react-transition-group';
 import 'assets/styles/transition.scss';

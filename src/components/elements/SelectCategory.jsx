@@ -1,7 +1,7 @@
 import React from "react";
 
 function SelectCategory(props) {
-  const { list, selectId, setId } = props;
+  const { list, selectId } = props;
   const style = {
     borderRadius: "30px",
   };

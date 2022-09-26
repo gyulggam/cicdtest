@@ -13,9 +13,7 @@ phases:
   pre_build:
     commands:
       # npm config에 전역 캐시 폴더 설정
-      - npm set cache .npm
-      # ci 옵션을 통해 속도 개선
-      - npm ci --prefer-offline --no-audit
+      - npm install
   build:
     commands:
       - npm run start
