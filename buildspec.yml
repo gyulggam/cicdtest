@@ -18,8 +18,8 @@ phases:
       - if [ "$CODEBUILD_BUILD_SUCCEEDING" = 0 ] ; then exit 1 ; fi
       - echo post_build starting...
       # 빌드가 완료되면 기존 s3는 제거하고 새로운 산출물 업로드
-      - aws s3 rm --recursive arn:aws:s3:::ci-cd-tutorial-5
-      - aws s3 sync dist arn:aws:s3:::ci-cd-tutorial-5
+      - aws s3 rm --recursive s3://ci-cd-tutorial-5
+      - aws s3 sync dist s3://ci-cd-tutorial-5
       
       # cloudFront에 캐시 무효화
       - aws cloudfront create-invalidation --distribution-id EZIUQ1GUX1J8G  --paths "/*"
