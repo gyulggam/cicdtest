@@ -1,0 +1,106 @@
+0 verbose cli /Users/kjs/.nvm/versions/node/v16.13.1/bin/node /Users/kjs/.nvm/versions/node/v16.13.1/bin/npm
+1 info using npm@8.19.2
+2 info using node@v16.13.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/Users/kjs/.nvm/versions/node/v16.13.1/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 2ms
+10 timing config:load:file:/Users/kjs/.npmrc Completed in 1ms
+11 timing config:load:user Completed in 1ms
+12 timing config:load:file:/Users/kjs/.nvm/versions/node/v16.13.1/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:validate Completed in 1ms
+15 timing config:load:credentials Completed in 0ms
+16 timing config:load:setEnvs Completed in 0ms
+17 timing config:load Completed in 8ms
+18 timing npm:load:configload Completed in 8ms
+19 timing npm:load:mkdirpcache Completed in 70ms
+20 timing npm:load:mkdirplogs Completed in 1ms
+21 verbose title npm i
+22 verbose argv "i"
+23 timing npm:load:setTitle Completed in 17ms
+24 timing config:load:flatten Completed in 2ms
+25 timing npm:load:display Completed in 3ms
+26 verbose logfile logs-max:10 dir:/Users/kjs/cicdtest/.npm/_logs
+27 verbose logfile /Users/kjs/cicdtest/.npm/_logs/2022-10-04T08_54_15_021Z-debug-0.log
+28 timing npm:load:logFile Completed in 4ms
+29 timing npm:load:timers Completed in 0ms
+30 timing npm:load:configScope Completed in 0ms
+31 timing npm:load Completed in 103ms
+32 timing arborist:ctor Completed in 1ms
+33 silly logfile done cleaning log files
+34 timing idealTree:init Completed in 11ms
+35 timing idealTree:userRequests Completed in 0ms
+36 silly idealTree buildDeps
+37 timing idealTree:#root Completed in 0ms
+38 timing idealTree:buildDeps Completed in 1ms
+39 timing idealTree:fixDepFlags Completed in 1ms
+40 timing idealTree Completed in 14ms
+41 timing arborist:ctor Completed in 0ms
+42 timing reify:loadTrees Completed in 17ms
+43 timing reify:diffTrees Completed in 1ms
+44 silly reify moves {}
+45 timing reify:retireShallow Completed in 1ms
+46 timing reify:createSparse Completed in 0ms
+47 timing reify:loadBundles Completed in 0ms
+48 silly audit bulk request { git: [ '0.1.5' ], mime: [ '1.2.9' ] }
+49 timing reify:unpack Completed in 1ms
+50 timing reify:unretire Completed in 0ms
+51 timing build:queue Completed in 0ms
+52 timing build:deps Completed in 0ms
+53 timing build Completed in 1ms
+54 timing reify:build Completed in 1ms
+55 timing reify:trash Completed in 0ms
+56 timing reify:save Completed in 65ms
+57 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 271ms
+58 timing auditReport:getReport Completed in 273ms
+59 silly audit report {
+59 silly audit report   mime: [
+59 silly audit report     {
+59 silly audit report       id: 1082039,
+59 silly audit report       url: 'https://github.com/advisories/GHSA-wrvr-8mpx-r7pp',
+59 silly audit report       title: 'mime Regular Expression Denial of Service when mime lookup performed on untrusted user input',
+59 silly audit report       severity: 'moderate',
+59 silly audit report       vulnerable_versions: '<1.4.1',
+59 silly audit report       cwe: [Array],
+59 silly audit report       cvss: [Object]
+59 silly audit report     }
+59 silly audit report   ],
+59 silly audit report   git: [
+59 silly audit report     {
+59 silly audit report       id: 1067294,
+59 silly audit report       url: 'https://github.com/advisories/GHSA-9gqr-xp86-f87h',
+59 silly audit report       title: 'Code injection in npm git',
+59 silly audit report       severity: 'moderate',
+59 silly audit report       vulnerable_versions: '<=0.1.5',
+59 silly audit report       cwe: [Array],
+59 silly audit report       cvss: [Object]
+59 silly audit report     }
+59 silly audit report   ]
+59 silly audit report }
+60 timing metavuln:cache:get:security-advisory:mime:cJTZavGSS04Yh2nJyU+NV/5ZtLkprwfWfmatUgQyRKtlIe3eOk43JWAsjMQzo0mQC4WD9vtv1iBoygEsl7KiMQ== Completed in 2ms
+61 timing metavuln:cache:get:security-advisory:git:ysHyodkLYPbSXfCh3s+cSPXHgTvYM+RHwJq4EM7TYexlm68fvX6Fr62uMXEVUCBDPyPWfVjV0KgAGnB2/INdHw== Completed in 30ms
+62 http fetch GET 200 https://registry.npmjs.org/mime 117ms (cache miss)
+63 timing metavuln:packument:mime Completed in 117ms
+64 timing metavuln:load:security-advisory:mime:1082039 Completed in 2ms
+65 timing metavuln:cache:put:security-advisory:mime:cJTZavGSS04Yh2nJyU+NV/5ZtLkprwfWfmatUgQyRKtlIe3eOk43JWAsjMQzo0mQC4WD9vtv1iBoygEsl7KiMQ== Completed in 3ms
+66 timing metavuln:calculate:security-advisory:mime:1082039 Completed in 124ms
+67 http fetch GET 200 https://registry.npmjs.org/git 235ms (cache miss)
+68 timing metavuln:packument:git Completed in 235ms
+69 timing metavuln:load:security-advisory:git:1067294 Completed in 0ms
+70 timing metavuln:cache:put:security-advisory:git:ysHyodkLYPbSXfCh3s+cSPXHgTvYM+RHwJq4EM7TYexlm68fvX6Fr62uMXEVUCBDPyPWfVjV0KgAGnB2/INdHw== Completed in 7ms
+71 timing metavuln:calculate:security-advisory:git:1067294 Completed in 243ms
+72 timing metavuln:cache:get:security-advisory:git:QWSirXf17YS11fwwXs8sGHHj2vV9e1hhjTFYdcatiYVv9t+fiehIrWFkXoujEMumZvx7AHSnx+7Wxp8yWBvJng== Completed in 0ms
+73 timing metavuln:load:security-advisory:git:cJTZavGSS04Yh2nJyU+NV/5ZtLkprwfWfmatUgQyRKtlIe3eOk43JWAsjMQzo0mQC4WD9vtv1iBoygEsl7KiMQ== Completed in 2ms
+74 timing metavuln:cache:put:security-advisory:git:QWSirXf17YS11fwwXs8sGHHj2vV9e1hhjTFYdcatiYVv9t+fiehIrWFkXoujEMumZvx7AHSnx+7Wxp8yWBvJng== Completed in 3ms
+75 timing metavuln:calculate:security-advisory:git:cJTZavGSS04Yh2nJyU+NV/5ZtLkprwfWfmatUgQyRKtlIe3eOk43JWAsjMQzo0mQC4WD9vtv1iBoygEsl7KiMQ== Completed in 5ms
+76 timing auditReport:init Completed in 251ms
+77 timing reify:audit Completed in 525ms
+78 timing reify Completed in 574ms
+79 timing command:i Completed in 596ms
+80 verbose exit 0
+81 timing npm Completed in 813ms
+82 info ok
